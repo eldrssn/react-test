@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 25px;
+}
+
+#root {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.App {
+  width: 800px;
+}
+
+.post {
+  display: flex;
+  padding: 15px;
+  
+  margin: 15px;
+  border-radius: 20px;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: rgba(93, 255, 142, 0.219);
+}
+
+.post-enter {
+  opacity: 0;
+}
+.post-enter-active {
+  opacity: 1;
+  transition: all 500ms ease-in;
+}
+.post-exit {
+  opacity: 1;
+}
+.post-exit-active {
+  opacity: 0;
+  transition: all 500ms ease-in;
+}
+
+.page__wrapper {
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.page {
+  padding: 10px;
+  border: 1px solid greenyellow;
+  cursor: pointer;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.page__current, .page:hover {
+  border: 1px solid greenyellow;
+  background-color: greenyellow;
+}
+
+.navbar {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  background-color: honeydew;
+  
+}
+
+.navbar__links {
+  margin-left: auto;
+}
+
+.post__btns {
+  display: flex;
+}
